@@ -6,10 +6,10 @@ from logging import NOTSET, WARNING, Logger, StreamHandler
 __all__ = ['getLogger', 'critical', 'error', 'exception',
            'warning', 'warn', 'info', 'debug']
 
-COLOR_NONE = '\e[m'
-COLOR_RED = '\e[31m'
-COLOR_BLUE = '\e[3m'
-COLOR_YELLOW = '\e[33m'
+COLOR_NONE = '\033[m'
+COLOR_RED = '\033[31m'
+COLOR_BLUE = '\033[3m'
+COLOR_YELLOW = '\033[33m'
 
 class ConsoleLogger(Logger):
     def __init__(self, name, level=NOTSET):
